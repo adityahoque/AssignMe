@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.adityahoque.apptest.MainActivity">
+    tools:context="com.example.adityahoque.apptest.LoginActivity">
 
     <com.twitter.sdk.android.core.identity.TwitterLoginButton
         android:id="@+id/twitter_login_button"
@@ -12,6 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="322dp" />
+        tools:layout_editor_absoluteY="202dp" />
 
 </android.support.constraint.ConstraintLayout>
