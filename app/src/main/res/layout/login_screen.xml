@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.adityahoque.apptest.LoginActivity">
+    tools:context="com.example.adityahoque.apptest.LoginActivity"
+    android:theme="AssignMeTheme.Theme">
 
     <com.twitter.sdk.android.core.identity.TwitterLoginButton
         android:id="@+id/twitter_login_button"
