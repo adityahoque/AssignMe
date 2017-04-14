@@ -7,4 +7,9 @@
     <color name="Jade">#FF88C38B</color>
     <color name="DarkAqua">#43abaa</color>
     <color name="White">#FFFFFFFF</color>
+    <color name="Liberty">#5C569A</color>
+    <color name="ShadowBlue">#747DAD</color>
+    <color name="CeruleanFrost">#6A98C1</color>
+    <color name="MiddleBlue">#73CDE1</color>
+    <color name="Alabaster">#F4F1E0</color>
 </resources>
