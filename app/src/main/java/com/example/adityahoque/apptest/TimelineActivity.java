@@ -46,7 +46,7 @@ public class TimelineActivity extends AppCompatActivity {
         TwitterApiClient twitterApiClient = TwitterCore.getInstance().getApiClient();
 // Can also use Twitter directly: Twitter.getApiClient()
         StatusesService statusesService = twitterApiClient.getStatusesService();
-        Call<List<Tweet>> call = statusesService.homeTimeline(199,null,null,null,null,null,null);
+        Call<List<Tweet>> call = statusesService.homeTimeline(200,null,null,null,null,null,null);
         call.enqueue(new Callback<List<Tweet>>() {
             @Override
             public void success(Result<List<Tweet>> result)
