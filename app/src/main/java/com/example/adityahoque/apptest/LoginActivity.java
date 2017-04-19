@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
                 // with your app's user model
                 String msg = "@" + session.getUserName() + " logged in! (#" + session.getUserId() + ")";
                 Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
-                startActivity(new Intent(getApplicationContext(), StudentTimelineActivity.class));
+                startActivity(new Intent(getApplicationContext(), TeacherOrStudentActivity.class));
             }
             @Override
             public void failure(TwitterException exception) {
