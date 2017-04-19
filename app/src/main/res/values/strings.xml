@@ -2,4 +2,5 @@
     <string name="app_name">AssignMe</string>
     <string name="homeButtonText">Home</string>
     <string name="searchButtonText">Search</string>
+    <string name="searchFieldText">Search</string>
 </resources>

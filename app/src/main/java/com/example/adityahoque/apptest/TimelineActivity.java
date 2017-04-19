@@ -74,6 +74,11 @@ public class TimelineActivity extends AppCompatActivity {
             startActivity(new Intent(TimelineActivity.this, TimelineActivity.class));
         }
 
+    public void searchButtonClick(View v)
+    {
+        startActivity(new Intent(TimelineActivity.this, SearchActivity.class));
+    }
+
 
 
 }
