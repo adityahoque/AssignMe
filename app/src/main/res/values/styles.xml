@@ -8,7 +8,6 @@
         <item name="android:navigationBarColor">@color/ShadowBlue</item>
         <item name="colorAccent">@color/CeruleanFrost</item>
         <item name="android:colorBackground">@color/Alabaster</item>
-        <item name="android:">@color/CeruleanFrost</item>
     </style>
 
 </resources>
