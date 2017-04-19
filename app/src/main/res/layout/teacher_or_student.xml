@@ -24,7 +24,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/student_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/MiddleBlue"
