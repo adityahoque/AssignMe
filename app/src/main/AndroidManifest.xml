@@ -23,9 +23,11 @@
             android:name="io.fabric.ApiKey"
             android:value="d817ab4b2b41cee1f627da7970dd87b7b0b82d98" />
 
-        <activity android:name=".TimelineActivity" />
+        <activity android:name=".StudentTimelineActivity" />
         <activity android:name=".SearchActivity" />
-        <activity android:name=".TeacherOrStudent"></activity>
+        <activity android:name=".TeacherOrStudentActivity" />
+        <activity android:name=".TeacherTimelineActivity" />
+        <activity android:name=".PostAssignmentActivity"></activity>
     </application>
 
 </manifest>
