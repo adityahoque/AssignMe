@@ -3,7 +3,7 @@ package com.example.adityahoque.apptest;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class TeacherOrStudent extends AppCompatActivity {
+public class TeacherOrStudentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
