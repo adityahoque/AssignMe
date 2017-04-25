@@ -3,6 +3,8 @@ package com.example.adityahoque.apptest;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import com.twitter.sdk.android.core.Callback;
@@ -28,14 +30,18 @@ public class SearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
+
+    }
+    public void generateSearchResult(View v)
+    {
         final Context context = this;
 
         TwitterApiClient twitterApiClient = TwitterCore.getInstance().getApiClient();
 // Can also use Twitter directly: Twitter.getApiClient()
 
         SearchService searchService = twitterApiClient.getSearchService();
-
-        Call<Search> call = searchService.tweets("nfl",null,null,null,null,100,null,null,null,true);
+        EditText searchText = (EditText) findViewById(R.id.searchBar);
+        Call<Search> call = searchService.tweets("@nfl",null,null,null,null,100,null,null,null,true);
         call.enqueue(new Callback<Search>() {
             @Override
             public void success(Result<Search> result)

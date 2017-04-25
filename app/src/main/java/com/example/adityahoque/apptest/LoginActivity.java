@@ -21,8 +21,8 @@ public class LoginActivity extends AppCompatActivity {
     private TwitterLoginButton loginButton;
 
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
-    private static final String TWITTER_KEY = "urQA0TbjAyFqUskdZsyyhNpjL";
-    private static final String TWITTER_SECRET = "UKXjjrP5qr5nN88sGhwbFdx197hBDOFSUjGCNAyO8tK2lbeccn";
+    private static final String TWITTER_KEY = "yc90bqeauRoMtXvQlIdbccVKm";
+    private static final String TWITTER_SECRET = "BmZlIcqRaT1KL3wHNzMjRjLBb9A8yHYmLvPOEri6lsCts7LwVY";
 
 
 
@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
                 // with your app's user model
                 String msg = "@" + session.getUserName() + " logged in! (#" + session.getUserId() + ")";
                 Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
-                startActivity(new Intent(getApplicationContext(), TeacherOrStudentActivity.class));
+                startActivity(new Intent(getApplicationContext(), StudentTimelineActivity.class));
             }
             @Override
             public void failure(TwitterException exception) {
