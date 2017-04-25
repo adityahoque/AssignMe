@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginStart="0dp"
     tools:context="com.example.adityahoque.apptest.TeacherOrStudentActivity">
 
     <Button
@@ -13,6 +16,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="161dp"
+        android:layout_marginBottom="50dp"
         android:background="@color/MiddleBlue"
         android:text="I am a teacher"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -28,10 +32,15 @@
         android:id="@+id/student_button"
         android:layout_width="300dp"
         android:layout_height="0dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="50"
         android:background="@color/MiddleBlue"
+        android:elevation="0dp"
         android:text="I am a student"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="246dp" />
+        tools:layout_editor_absoluteY="256dp" />
 
 </android.support.constraint.ConstraintLayout>
