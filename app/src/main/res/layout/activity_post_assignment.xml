@@ -6,4 +6,24 @@
     android:layout_height="match_parent"
     tools:context="com.example.adityahoque.apptest.PostAssignmentActivity">
 
+    <EditText
+        android:id="@+id/TweetTextBox"
+        android:layout_width="322dp"
+        android:layout_height="180dp"
+        android:ems="10"
+        android:inputType="textMultiLine|textAutoCorrect"
+        android:text="What are you assigning?"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="102dp" />
+
+    <Button
+        android:id="@+id/PostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="294dp"
+        android:layout_marginRight="31dp"
+        android:background="@color/MiddleBlue"/>
 </android.support.constraint.ConstraintLayout>
