@@ -33,10 +33,10 @@
     </LinearLayout>
 
     <ListView
-        android:id="@+id/timeline"
+        android:id="@+id/searchResult"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="8"/>
+        android:layout_weight="8" />
 
 </LinearLayout>
 

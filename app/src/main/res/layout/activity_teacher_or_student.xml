@@ -12,11 +12,12 @@
         android:id="@+id/teacher_button"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_gravity="center"
         android:layout_marginBottom="50dp"
         android:layout_marginTop="160dp"
-        android:layout_gravity="center"
         android:background="@color/MiddleBlue"
-        android:text="I am a teacher" />
+        android:onClick="teacherButtonClick"
+        android:text="@string/teacherButtonText" />
 
     <Button
         android:id="@+id/student_button"
@@ -25,7 +26,8 @@
         android:layout_gravity="center"
         android:background="@color/MiddleBlue"
         android:elevation="0dp"
-        android:text="I am a student"
+        android:onClick="studentButtonClick"
+        android:text="@string/studentButtonText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteY="257dp" />
