@@ -3,4 +3,7 @@
     <string name="homeButtonText">Home</string>
     <string name="searchButtonText">Search</string>
     <string name="searchFieldText">Search</string>
+    <string name="postButtonText">Post</string>
+    <string name="teacherButtonText">I am a teacher</string>
+    <string name="studentButtonText">I am a student</string>
 </resources>
