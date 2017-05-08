@@ -16,7 +16,7 @@ import com.twitter.sdk.android.core.models.Tweet;
 import com.twitter.sdk.android.core.services.StatusesService;
 import com.twitter.sdk.android.tweetui.FixedTweetTimeline;
 import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
-
+import com.twitter.sdk.android.tweetui.CompactTweetView;
 import java.util.List;
 
 import retrofit2.Call;

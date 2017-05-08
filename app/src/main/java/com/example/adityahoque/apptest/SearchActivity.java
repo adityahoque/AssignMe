@@ -54,7 +54,6 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void success(Result<Search> result)
             {
-
                 final FixedTweetTimeline homeTimeline = new FixedTweetTimeline.Builder()
                         .setTweets(result.data.tweets)
                         .build();
