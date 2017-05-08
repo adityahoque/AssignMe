@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                 TwitterSession session = result.data;
                 // TODO: Remove toast and use the TwitterSession's userID
                 // with your app's user model
-                String msg = "@" + session.getUserName() + " logged in! (#" + session.getUserId() + ")";
+                String msg = "@" + session.getUserName() + " logged in!";
                 Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
                 startActivity(new Intent(getApplicationContext(), TeacherOrStudentActivity.class));
             }

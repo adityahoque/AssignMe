@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="92"
+        android:layout_weight="45"
         android:orientation="horizontal">
 
 
@@ -21,10 +21,11 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="text"
+            android:text="@string/searchBarText" />
 
         <Button
-            android:id="@+id/searchButton"
+            android:id="@+id/generateSearchButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -37,6 +38,31 @@
         android:id="@+id/searchResult"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="8" />
+        android:layout_weight="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="45">
+
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="homeButtonClick"
+            android:text="@string/homeButtonText" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="searchButtonClick"
+            android:text="@string/searchButtonText" />
+
+    </LinearLayout>
 
 </LinearLayout>

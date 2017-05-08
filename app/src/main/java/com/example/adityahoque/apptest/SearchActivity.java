@@ -2,8 +2,10 @@ package com.example.adityahoque.apptest;
 
 import android.app.DownloadManager;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -42,11 +44,12 @@ public class SearchActivity extends AppCompatActivity {
         TwitterApiClient twitterApiClient = TwitterCore.getInstance().getApiClient();
 // Can also use Twitter directly: Twitter.getApiClient()
 
-        EditText searchText = (EditText) findViewById(R.id.searchBar);
-        /*
+        EditText searchEditText = (EditText) findViewById(R.id.searchBar);
+        String searchText = searchEditText.getText().toString();
+        Log.i("Aditya",searchText);
         SearchService searchService = twitterApiClient.getSearchService();
 
-        Call<Search> call = searchService.tweets("@nfl",null,null,null,null,100,null,null,null,true);
+        Call<Search> call = searchService.tweets(searchText,null,null,null,null,100,null,null,null,true);
         call.enqueue(new Callback<Search>() {
             @Override
             public void success(Result<Search> result)
@@ -68,7 +71,15 @@ public class SearchActivity extends AppCompatActivity {
                 //Do something on failure
             }
         });
-        */
 
+
+    }
+    public void homeButtonClick(View v) {
+        startActivity(new Intent(SearchActivity.this, StudentTimelineActivity.class));
+    }
+
+    public void searchButtonClick(View v)
+    {
+        startActivity(new Intent(SearchActivity.this, SearchActivity.class));
     }
 }
