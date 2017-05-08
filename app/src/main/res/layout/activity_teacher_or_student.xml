@@ -15,7 +15,8 @@
         android:layout_gravity="center"
         android:layout_marginBottom="50dp"
         android:layout_marginTop="160dp"
-        android:background="@color/MiddleBlue"
+        android:background="@color/Liberty"
+        android:textColor="@color/White"
         android:onClick="teacherButtonClick"
         android:text="@string/teacherButtonText" />
 
@@ -24,7 +25,8 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:background="@color/MiddleBlue"
+        android:background="@color/Liberty"
+        android:textColor="@color/White"
         android:elevation="0dp"
         android:onClick="studentButtonClick"
         android:text="@string/studentButtonText"

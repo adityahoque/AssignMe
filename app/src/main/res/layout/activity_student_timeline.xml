@@ -21,15 +21,15 @@
 
 
         <ImageButton
-            android:id="@+id/homeButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="homeButtonClick"
-            android:src="@drawable/ic_home"
-            android:background="@color/Liberty"
-            android:textColor="@color/White"
-            />
+        android:id="@+id/homeButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="homeButtonClick"
+        android:src="@drawable/ic_home"
+        android:background="@color/Liberty"
+        android:textColor="@color/White"
+        />
 
         <ImageButton
             android:id="@+id/searchButton"
@@ -38,8 +38,7 @@
             android:layout_weight="1"
             android:onClick="searchButtonClick"
             android:src="@drawable/ic_search"
-            android:background="@color/Liberty"
-            android:textColor="@color/White"/>
+            android:background="@color/Liberty"/>
 
     </LinearLayout>
 
