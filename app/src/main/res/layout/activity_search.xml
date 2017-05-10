@@ -55,7 +55,6 @@
             android:onClick="homeButtonClick"
             android:src="@drawable/ic_home"
             android:background="@color/Liberty"
-            android:textColor="@color/White"
             />
 
 
