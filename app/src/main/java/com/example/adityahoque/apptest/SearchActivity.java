@@ -46,7 +46,6 @@ public class SearchActivity extends AppCompatActivity {
 
         EditText searchEditText = (EditText) findViewById(R.id.searchBar);
         String searchText = searchEditText.getText().toString();
-        Log.i("Aditya",searchText);
         SearchService searchService = twitterApiClient.getSearchService();
 
         Call<Search> call = searchService.tweets(searchText,null,null,null,null,100,null,null,null,true);

@@ -17,9 +17,11 @@ public class PostAssignmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_timeline);
 
+
         final TwitterSession session = TwitterCore.getInstance().getSessionManager()
                 .getActiveSession();
-        final Intent intent = new ComposerActivity.Builder(PostAssignmentActivity.this)
+        String hashtag = "#"+session.getUserName();
+        final Intent intent = new ComposerActivity.Builder(PostAssignmentActivity.this).hashtags(hashtag)
                 .session(session)
                 .createIntent();
         startActivity(intent);

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 
+
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
 import com.twitter.sdk.android.core.TwitterApiClient;
@@ -39,6 +40,7 @@ public class StudentTimelineActivity extends AppCompatActivity {
             @Override
             public void success(Result<List<Tweet>> result)
             {
+
                 final FixedTweetTimeline homeTimeline = new FixedTweetTimeline.Builder()
                         .setTweets(result.data)
                         .build();
