@@ -19,8 +19,8 @@ public class PostAssignmentActivity extends AppCompatActivity {
 
 
         final TwitterSession session = TwitterCore.getInstance().getSessionManager()
-                .getActiveSession();
-        String hashtag = "#"+session.getUserName();
+                .getActiveSession();//get the current Twitter session
+        String hashtag = "#"+session.getUserName();//prefill the text field with #username
         final Intent intent = new ComposerActivity.Builder(PostAssignmentActivity.this).hashtags(hashtag)
                 .session(session)
                 .createIntent();
@@ -28,11 +28,11 @@ public class PostAssignmentActivity extends AppCompatActivity {
     }
 
     public void homeButtonClick(View v) {
-        startActivity(new Intent(PostAssignmentActivity.this, TeacherTimelineActivity.class));
+        startActivity(new Intent(PostAssignmentActivity.this, TeacherTimelineActivity.class));//home button takes them back to home timeline
     }
 
     public void postButtonClick(View v)
     {
-        startActivity(new Intent(PostAssignmentActivity.this, PostAssignmentActivity.class));
+        startActivity(new Intent(PostAssignmentActivity.this, PostAssignmentActivity.class));//post button takes them back to post screen
     }
 }

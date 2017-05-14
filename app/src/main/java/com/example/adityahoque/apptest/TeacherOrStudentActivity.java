@@ -14,11 +14,11 @@ public class TeacherOrStudentActivity extends AppCompatActivity {
     }
 
     public void studentButtonClick(View v) {
-        startActivity(new Intent(TeacherOrStudentActivity.this, StudentTimelineActivity.class));
+        startActivity(new Intent(TeacherOrStudentActivity.this, StudentTimelineActivity.class));//student button brings them to student timeline screen
     }
 
     public void teacherButtonClick(View v) {
-        startActivity(new Intent(TeacherOrStudentActivity.this, TeacherTimelineActivity.class));
+        startActivity(new Intent(TeacherOrStudentActivity.this, TeacherTimelineActivity.class));//teacher button brings them to teacher timeline screen
     }
 
 }

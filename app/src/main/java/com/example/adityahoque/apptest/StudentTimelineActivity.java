@@ -35,7 +35,7 @@ public class StudentTimelineActivity extends AppCompatActivity {
         TwitterApiClient twitterApiClient = TwitterCore.getInstance().getApiClient();
 // Can also use Twitter directly: Twitter.getApiClient()
         StatusesService statusesService = twitterApiClient.getStatusesService();
-        Call<List<Tweet>> call = statusesService.homeTimeline(200,null,null,null,null,null,null);
+        Call<List<Tweet>> call = statusesService.homeTimeline(200,null,null,null,null,null,null);//200 is how many tweets it returns (max)
         call.enqueue(new Callback<List<Tweet>>() {
             @Override
             public void success(Result<List<Tweet>> result)
@@ -43,11 +43,11 @@ public class StudentTimelineActivity extends AppCompatActivity {
 
                 final FixedTweetTimeline homeTimeline = new FixedTweetTimeline.Builder()
                         .setTweets(result.data)
-                        .build();
+                        .build();//instantiate home timeline
 
                 final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(context)
                         .setTimeline(homeTimeline)
-                        .build();
+                        .build();//build home timeline
                 ListView listView = (ListView) findViewById(R.id.timeline);
                 listView.setAdapter(adapter);
 
@@ -61,12 +61,12 @@ public class StudentTimelineActivity extends AppCompatActivity {
     }
 
     public void homeButtonClick(View v) {
-            startActivity(new Intent(StudentTimelineActivity.this, StudentTimelineActivity.class));
+            startActivity(new Intent(StudentTimelineActivity.this, StudentTimelineActivity.class));//home button refreshes screen
         }
 
     public void searchButtonClick(View v)
     {
-        startActivity(new Intent(StudentTimelineActivity.this, SearchActivity.class));
+        startActivity(new Intent(StudentTimelineActivity.this, SearchActivity.class));//search button takes them to search screen
     }
 
 

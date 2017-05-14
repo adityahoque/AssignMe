@@ -34,18 +34,18 @@ public class TeacherTimelineActivity extends AppCompatActivity {
         TwitterApiClient twitterApiClient = TwitterCore.getInstance().getApiClient();
 // Can also use Twitter directly: Twitter.getApiClient()
         StatusesService statusesService = twitterApiClient.getStatusesService();
-        Call<List<Tweet>> call = statusesService.homeTimeline(200,null,null,null,null,null,null);
+        Call<List<Tweet>> call = statusesService.homeTimeline(200,null,null,null,null,null,null);//200 is how many tweets it returns (max)
         call.enqueue(new Callback<List<Tweet>>() {
             @Override
             public void success(Result<List<Tweet>> result)
             {
                 final FixedTweetTimeline homeTimeline = new FixedTweetTimeline.Builder()
                         .setTweets(result.data)
-                        .build();
+                        .build();//instantiate timeline
 
                 final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(context)
                         .setTimeline(homeTimeline)
-                        .build();
+                        .build();//build timeline
                 ListView listView = (ListView) findViewById(R.id.timeline);
                 listView.setAdapter(adapter);
 
@@ -59,12 +59,12 @@ public class TeacherTimelineActivity extends AppCompatActivity {
     }
 
     public void homeButtonClick(View v) {
-        startActivity(new Intent(TeacherTimelineActivity.this, TeacherTimelineActivity.class));
+        startActivity(new Intent(TeacherTimelineActivity.this, TeacherTimelineActivity.class));//home button refreshes timeline
     }
 
     public void postButtonClick(View v)
     {
-        startActivity(new Intent(TeacherTimelineActivity.this, PostAssignmentActivity.class));
+        startActivity(new Intent(TeacherTimelineActivity.this, PostAssignmentActivity.class));//post button takes them to post screen
     }
 
 

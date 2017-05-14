@@ -44,22 +44,22 @@ public class SearchActivity extends AppCompatActivity {
         TwitterApiClient twitterApiClient = TwitterCore.getInstance().getApiClient();
 // Can also use Twitter directly: Twitter.getApiClient()
 
-        EditText searchEditText = (EditText) findViewById(R.id.searchBar);
-        String searchText = searchEditText.getText().toString();
+        EditText searchEditText = (EditText) findViewById(R.id.searchBar); //get the search bar
+        String searchText = searchEditText.getText().toString(); //get the text in the search bar
         SearchService searchService = twitterApiClient.getSearchService();
 
-        Call<Search> call = searchService.tweets(searchText,null,null,null,null,100,null,null,null,true);
+        Call<Search> call = searchService.tweets(searchText,null,null,null,null,100,null,null,null,true);//gets 100 results (max)
         call.enqueue(new Callback<Search>() {
             @Override
             public void success(Result<Search> result)
             {
                 final FixedTweetTimeline homeTimeline = new FixedTweetTimeline.Builder()
                         .setTweets(result.data.tweets)
-                        .build();
+                        .build();//instantiate the search timeline
 
                 final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(context)
                         .setTimeline(homeTimeline)
-                        .build();
+                        .build();//show the search timeline
                 ListView listView = (ListView) findViewById(R.id.searchResult);
                 listView.setAdapter(adapter);
 
@@ -73,11 +73,11 @@ public class SearchActivity extends AppCompatActivity {
 
     }
     public void homeButtonClick(View v) {
-        startActivity(new Intent(SearchActivity.this, StudentTimelineActivity.class));
+        startActivity(new Intent(SearchActivity.this, StudentTimelineActivity.class));//home button takes them back to home timeline
     }
 
     public void searchButtonClick(View v)
     {
-        startActivity(new Intent(SearchActivity.this, SearchActivity.class));
+        startActivity(new Intent(SearchActivity.this, SearchActivity.class));//search button takes them back to search screen
     }
 }
