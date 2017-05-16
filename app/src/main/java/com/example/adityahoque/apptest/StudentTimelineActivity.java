@@ -69,6 +69,11 @@ public class StudentTimelineActivity extends AppCompatActivity {
         startActivity(new Intent(StudentTimelineActivity.this, SearchActivity.class));//search button takes them to search screen
     }
 
+    public void backToLoginButtonClick(View v)
+    {
+        startActivity(new Intent(StudentTimelineActivity.this, LoginActivity.class));//back to login button takes them to login screen
+    }
+
 
 
 }

@@ -40,6 +40,15 @@
             android:src="@drawable/ic_search"
             android:background="@color/Liberty"/>
 
+        <ImageButton
+            android:id="@+id/backToLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="backToLoginButtonClick"
+            android:src="@drawable/ic_search"
+            android:background="@color/Liberty"/>
+
     </LinearLayout>
 
 </LinearLayout>
