@@ -21,5 +21,9 @@ public class TeacherOrStudentActivity extends AppCompatActivity {
         startActivity(new Intent(TeacherOrStudentActivity.this, TeacherTimelineActivity.class));//teacher button brings them to teacher timeline screen
     }
 
+    public void backToLoginClick(View v) {
+        startActivity(new Intent(TeacherOrStudentActivity.this, LoginActivity.class));//back to login button brings them to login screen
+    }
+
 }
 

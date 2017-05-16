@@ -7,4 +7,5 @@
     <string name="teacherButtonText">I am a teacher</string>
     <string name="studentButtonText">I am a student</string>
     <string name="searchBarText">#</string>
+    <string name="backToLoginText">Back To Login</string>
 </resources>
