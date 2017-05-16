@@ -69,7 +69,7 @@ public class TeacherTimelineActivity extends AppCompatActivity {
 
     public void backToLoginButtonClick(View v)
     {
-        startActivity(new Intent(TeacherTimelineActivity.this, LoginActivity.class));//back to login button takes them to login screen
+        startActivity(new Intent(StudentTimelineActivity.this, LoginActivity.class));//back to login button takes them to login screen
     }
 
 
