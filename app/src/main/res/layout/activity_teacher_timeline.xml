@@ -47,7 +47,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="backToLoginButtonClick"
-            android:src="@drawable/ic_search"
+            android:src="@drawable/ic_tologin"
             android:background="@color/Liberty"/>
 
     </LinearLayout>
