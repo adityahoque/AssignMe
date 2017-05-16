@@ -24,6 +24,7 @@
         android:id="@+id/student_button"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
         android:layout_gravity="center"
         android:background="@color/Liberty"
         android:textColor="@color/White"
@@ -32,7 +33,7 @@
         android:text="@string/studentButtonText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="257dp" />
+        />
 
     <Button
         android:id="@+id/backToLogin_button"
